@@ -1,0 +1,27 @@
+.riskAssessmentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.riskButtonContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.riskButton {
+  width: 200px;
+  height: 200px;
+}
+
+.generatePortfolioContainer {
+  margin-top: 5%;
+  width: 30%;
+}
+
+.generatePortfolio {
+  width: 100%;
+  padding: 20px;
+}
