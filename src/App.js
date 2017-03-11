@@ -22,15 +22,12 @@ class App extends Component {
   riskSetter(riskString) {
     this.setState({
       userRisk: riskString,
-    }).then(() => console.log(this.state.userRisk))
+    })
   }
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to AI-Invest</h2>
-        </div>
         <PotentialEarnings />
         <RiskAssessment riskSet={this.riskSetter}/>
         <button onClick={this.clickFunc}>Retrieve Info</button>
