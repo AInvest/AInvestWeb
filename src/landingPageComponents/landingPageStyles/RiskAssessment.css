@@ -14,6 +14,13 @@
 .riskButton {
   width: 200px;
   height: 200px;
+  background-color: rgba(0,0,0,.1);
+  border: none;
+}
+
+.riskButton:hover {
+  background-color: rgba(95,101,217,1);
+  color: white;
 }
 
 .generatePortfolioContainer {
@@ -24,4 +31,11 @@
 .generatePortfolio {
   width: 100%;
   padding: 20px;
+  background: #5A63D8; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5A63D8, #CD90E1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5A63D8, #CD90E1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5A63D8, #CD90E1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #5A63D8, #CD90E1); /* Standard syntax */
+  color: white;
+  border: none;
 }

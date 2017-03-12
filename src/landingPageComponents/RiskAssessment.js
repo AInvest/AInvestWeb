@@ -24,8 +24,8 @@ export default class RiskAssessment extends React.Component {
   render() {
     return (
       <div className="riskAssessmentContainer">
-        <h1>Risk Assessment</h1>
-        <h2>How Lucky Do You Feel?</h2>
+        <h2>Risk Assessment</h2>
+        <h1>How Lucky Do You Feel?</h1>
         <div className="riskButtonContainer">
           <button className="riskButton" onClick={this.onLowButtonClick}>
             <h1>Low</h1>

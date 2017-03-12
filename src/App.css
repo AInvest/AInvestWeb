@@ -1,5 +1,24 @@
-.App {
+@font-face {
+   font-family: 'Open Sans';
+   font-style: bold;
+   font-weight: 1000;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+@font-face {
+   font-family: 'Open Sans Light';
+   font-style: normal;
+   font-weight: 1;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+button, .App {
   text-align: center;
+  font-family: "Open Sans Light";
+}
+
+button h1{
+  font-family: 'Open Sans';
 }
 
 .App-logo {
