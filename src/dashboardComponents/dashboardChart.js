@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Chart from 'chart.js';
-// import styles from './dashboardStyles/dashboardStyles.css';
+import './dashboardStyles/dashboardStyles.css';
 
 class ChartView extends Component {
   constructor(props) {
@@ -55,8 +55,8 @@ class ChartView extends Component {
 
   render() {
     return (
-      <div>
-        <div style={{position: 'absolute', top: '150px', left: '270px', width: '900px', height: '800px'}}>
+      <div className="chart">
+        <div className="chartView">
           <canvas ref="promptChartRef" id="promptChart"></canvas>
         </div>
       </div>
