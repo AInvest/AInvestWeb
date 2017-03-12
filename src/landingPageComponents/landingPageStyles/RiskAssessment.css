@@ -36,6 +36,7 @@
 .riskButton:hover {
   background-color: rgba(95,101,217,1);
   color: white;
+  cursor: pointer;
 }
 
 .generatePortfolioContainer {

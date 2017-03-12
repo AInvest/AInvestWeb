@@ -1,4 +1,58 @@
+@font-face {
+   font-family: 'Open Sans';
+   font-style: bolder;
+   font-weight: 1000;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+@font-face {
+   font-family: 'Open Sans Light';
+   font-style: lighter;
+   font-weight: 1;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
 .header {
-  height: 200px;
-  background-color: black;
+  font-family: 'Open Sans';
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background-color: white;
+  color: grey;
+  box-shadow: 0 14px 28px rgba(90,90,90,0.15), 0 10px 10px rgba(90,90,90,0.112);
+}
+
+
+
+.investmentNum {
+  color: rgba(95,101,217,1);
+  font-size: 1.5rem;
+}
+
+.earningNum {
+  font-size: 1.5rem;
+  color: #6FAB2D;
+}
+
+.riskChoice {
+  font-size: 1.5rem;
+  color: #AD65D9;
+}
+
+button {
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  width: 20%;
+  height: 50%;
+  color: white;
+  background-color: #6FAB2D;
+  border: none;
+}
+
+button:hover {
+  background-color: #7ED024;
+  cursor: pointer;
 }

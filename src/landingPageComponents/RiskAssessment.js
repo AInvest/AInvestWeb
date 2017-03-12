@@ -4,21 +4,37 @@ import './landingPageStyles/RiskAssessment.css';
 export default class RiskAssessment extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      risk: '',
+    }
     this.onLowButtonClick = this.onLowButtonClick.bind(this);
     this.onMediumButtonClick = this.onMediumButtonClick.bind(this);
     this.onHighButtonClick = this.onHighButtonClick.bind(this);
+    this.onGeneratePortfolioClick = this.onGeneratePortfolioClick.bind(this);
   }
 
   onLowButtonClick() {
-    this.props.riskSet("Low");
+    this.setState({
+      risk: 'Low',
+    });
   }
 
   onMediumButtonClick() {
-    this.props.riskSet("Medium");
+    this.setState({
+      risk: 'Medium',
+    });
   }
 
   onHighButtonClick() {
-    this.props.riskSet("High");
+    this.setState({
+      risk: 'High',
+    });
+  }
+
+  onGeneratePortfolioClick() {
+    if (this.state.risk) {
+      window.location = '/dashboard/?investment=' + this.props.investment + '&risk=' + this.state.risk;
+    }
   }
 
   render() {
