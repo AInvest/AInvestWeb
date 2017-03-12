@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './dashboardComponents/dashboardHeader';
 import ChartView from './dashboardComponents/dashboardChart.js';
 import Table from './dashboardComponents/Table.js';
+import HoverCard from './dashboardComponents/HoverCard.js';
 
 export default class Dashboard extends React.Component {
   constructor(props) {
@@ -9,6 +10,14 @@ export default class Dashboard extends React.Component {
     this.state = {
       test: 'test',
     };
+
+    this.onHover = this.onHover.bind(this);
+  }
+
+  onHover() {
+    this.setState({
+      showCard: true
+    });
   }
 
   render() {
@@ -16,7 +25,10 @@ export default class Dashboard extends React.Component {
       <div>
         <Header />
         <ChartView test={this.state.test} />
-        <Table />
+        <div onMouseOver={()=>{ this.onHover(); }}>
+          <Table />
+        </div>
+        {this.state.showCard ? <HoverCard /> : undefined}
       </div>
     );
   }

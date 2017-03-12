@@ -85,3 +85,15 @@ button:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.hoverCard{
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  height: 400px;
+  padding-top: 5%;
+  margin-top: 50px;
+  background-image: url('./Hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
