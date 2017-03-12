@@ -7,6 +7,10 @@ export default class Table extends React.Component {
   }
 
   render() {
-    return <div className="table"></div>;
+    return (
+      <div className="tableContainer">
+        <div className="table"></div>
+      </div>
+    );
   }
 }

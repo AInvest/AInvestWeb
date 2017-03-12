@@ -23,7 +23,7 @@ class ChartView extends Component {
             label: ['With AInvest', ],
             data: [20000, 26403, 24803, 32500, 32940, 45029, 47001 ],
             backgroundColor: [
-              'rgba(0,255,0,0.3)',
+              'rgba(101,103,217,0.6)',
             ],
             lineTension: 0,
             borderColor: [
@@ -34,7 +34,7 @@ class ChartView extends Component {
             label: 'Without AInvest',
             data: [20000, 23032, 24803, 30320, 22840, 32029, 30321],
             backgroundColor: [
-              'rgba(0,0,255,0.3)',
+              '#AD65D9',
             ],
             lineTension: 0,
             borderWidth: 1

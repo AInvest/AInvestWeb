@@ -69,10 +69,15 @@ button:hover {
   height: 400px;
 }
 
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .table {
   position: relative;
-  width: 95%;
-  left: 2.5%;
+  width: 1000px;
   height: 400px;
   padding-top: 5%;
   margin-top: 50px;
