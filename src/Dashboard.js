@@ -25,10 +25,7 @@ export default class Dashboard extends React.Component {
       <div>
         <Header />
         <ChartView test={this.state.test} />
-        <div onMouseOver={()=>{ this.onHover(); }}>
-          <Table />
-        </div>
-        {this.state.showCard ? <HoverCard /> : undefined}
+        <Table />
       </div>
     );
   }

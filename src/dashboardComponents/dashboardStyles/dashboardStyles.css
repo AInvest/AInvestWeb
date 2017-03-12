@@ -13,6 +13,8 @@
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   font-family: 'Open Sans';
   letter-spacing: 2px;
   display: flex;
@@ -22,6 +24,7 @@
   background-color: white;
   color: grey;
   box-shadow: 0 14px 28px rgba(90,90,90,0.15), 0 10px 10px rgba(90,90,90,0.112);
+  z-index: 1000000;
 }
 
 
@@ -58,6 +61,7 @@ button:hover {
 }
 
 .chart {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +75,7 @@ button:hover {
 
 .tableContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -86,13 +90,22 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-.hoverCard{
+.tableHover {
   position: relative;
-  width: 95%;
-  left: 2.5%;
+  width: 1000px;
   height: 400px;
   padding-top: 5%;
   margin-top: 50px;
+  background-image: url('./Graph_Hover_2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hoverCard{
+  position: relative;
+  width: 50%;
+  left: 2.5%;
+  height: 300px;
   background-image: url('./Hover.png');
   background-size: contain;
   background-repeat: no-repeat;
