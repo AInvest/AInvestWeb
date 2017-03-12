@@ -21,15 +21,15 @@ export default class dashboardHeader extends React.Component {
       <div className="header">
         <div className="info">
           <p>INVESTMENT</p>
-          <p className="investmentNum">{this.getParameterByName("investment")}</p>
+          <p className="investmentNum">${this.getParameterByName("investment")}</p>
         </div>
         <div className="info">
           <p>1 YR EARNING</p>
-          <p className="earningNum">{this.getParameterByName("risk")}</p>
+          <p className="earningNum">${Number(this.getParameterByName("investment"))*2}</p>
         </div>
         <div className="info">
           <p>RISK</p>
-          <p className="riskChoice">RISK CHOICE</p>
+          <p className="riskChoice">{this.getParameterByName("risk")}</p>
         </div>
         <button>BUY</button>
       </div>
