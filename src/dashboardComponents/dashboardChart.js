@@ -56,7 +56,7 @@ class ChartView extends Component {
   render() {
     return (
       <div>
-        <div style={{position: 'absolute', top: '60px', left: '10px', width: '500px', height: '500px'}}>
+        <div style={{position: 'absolute', top: '150px', left: '300px', width: '900px', height: '800px'}}>
           <canvas ref="promptChartRef" id="promptChart"></canvas>
         </div>
       </div>
