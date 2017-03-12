@@ -30,7 +30,6 @@ class App extends Component {
       <div className="App">
         <PotentialEarnings />
         <RiskAssessment riskSet={this.riskSetter}/>
-        <button onClick={this.clickFunc}>Retrieve Info</button>
       </div>
     );
   }

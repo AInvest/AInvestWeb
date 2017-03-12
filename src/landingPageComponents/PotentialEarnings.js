@@ -6,7 +6,6 @@ export default class PotentialEarnings extends React.Component {
     super(props);
     this.state = {
       investmentValue: 5000,
-      earnings: 10000
     }
 
     this.onChangeFunc = this.onChangeFunc.bind(this);
@@ -25,7 +24,7 @@ export default class PotentialEarnings extends React.Component {
         <h3>LET'S GET STARTED</h3>
         <h1>How much do you want to invest?</h1>
         <input type="number" value={this.state.investmentValue} onChange={this.onChangeFunc}/>
-        <p>Potential earnings: {this.state.investmentValue*2}</p>
+        <p>1 Year Potential Earnings: ${this.state.investmentValue*2}</p>
       </div>
       );
   }

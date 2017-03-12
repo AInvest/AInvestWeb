@@ -42,7 +42,7 @@ export default class RiskAssessment extends React.Component {
         </div>
         <div className="generatePortfolioContainer">
           <button className="generatePortfolio">
-            <h2>Generate My Portfolio</h2>
+            <h1>Generate My Portfolio</h1>
           </button>
         </div>
       </div>

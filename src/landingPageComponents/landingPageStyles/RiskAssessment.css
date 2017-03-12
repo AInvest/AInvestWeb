@@ -1,3 +1,17 @@
+@font-face {
+   font-family: 'Open Sans';
+   font-style: bolder;
+   font-weight: 1000;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+@font-face {
+   font-family: 'Open Sans Light';
+   font-style: lighter;
+   font-weight: 1;
+   src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
 .riskAssessmentContainer {
   display: flex;
   flex-direction: column;
@@ -11,8 +25,9 @@
   justify-content: space-around;
 }
 
+
 .riskButton {
-  width: 200px;
+  width: 30%;
   height: 200px;
   background-color: rgba(0,0,0,.1);
   border: none;
@@ -26,6 +41,7 @@
 .generatePortfolioContainer {
   margin-top: 5%;
   width: 30%;
+  min-width: 260px;
 }
 
 .generatePortfolio {
@@ -38,4 +54,27 @@
   background: linear-gradient(to right, #5A63D8, #CD90E1); /* Standard syntax */
   color: white;
   border: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .riskButtonContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+  }
+
+  .riskButton {
+    height: 100px;
+    width: 80%;
+  }
+
+  .generatePortfolioContainer {
+    width: 100%;
+  }
+
+  .generatePortfolio {
+    width: 56%;
+  }
 }
