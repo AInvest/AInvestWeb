@@ -7,9 +7,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userRisk: ''
+      userRisk: '',
+      userInvestment: 0,
     }
-    this.riskSetter = this.riskSetter.bind(this);
+    this.setUserRisk = this.setUserRisk.bind(this);
+    this.setUserInvestment = this.setUserInvestment.bind(this);
   }
 
   clickFunc() {
@@ -19,7 +21,13 @@ class App extends Component {
     .then(value => console.log(value))
   }
 
-  riskSetter(riskString) {
+  setUserInvestment(investment) {
+    this.setState({
+      userInvestment: investment,
+    })
+  }
+
+  setUserRisk(riskString) {
     this.setState({
       userRisk: riskString,
     })
@@ -28,8 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PotentialEarnings />
-        <RiskAssessment riskSet={this.riskSetter}/>
+        <PotentialEarnings updateInvestment={this.setUserInvestment}/>
+        <RiskAssessment riskSet={this.setUserRisk}/>
       </div>
     );
   }

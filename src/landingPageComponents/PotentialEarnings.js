@@ -16,6 +16,7 @@ export default class PotentialEarnings extends React.Component {
     this.setState({
       investmentValue: input.target.value,
     });
+    this.props.updateInvestment(input.target.value);
   }
 
   render() {
