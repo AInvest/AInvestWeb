@@ -24,8 +24,8 @@ export default class dashboardHeader extends React.Component {
           <p className="investmentNum">${this.getParameterByName("investment")}</p>
         </div>
         <div className="info">
-          <p>1 YR EARNING</p>
-          <p className="earningNum">${Number(this.getParameterByName("investment"))*2}</p>
+          <p>1 YR PROJECTED</p>
+          <p className="earningNum">${Number(this.getParameterByName("investment"))*2.37}</p>
         </div>
         <div className="info">
           <p>RISK</p>
